@@ -1,5 +1,8 @@
 // inicia passando a classe do container das imagens
-init('img-compare-container');
+// sempre inicar com timeout para garantir carregamento dos elementos
+setTimeout(() => {
+  init('img-compare-container');
+}, 500);
 
 // funcao que inicia os eventos
 function init(classContainer) {
